@@ -1,0 +1,5 @@
+---
+- hosts: local
+  pre_tasks:
+   - name: Update system
+     command: dnf update
