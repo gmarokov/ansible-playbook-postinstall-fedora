@@ -1,5 +1,7 @@
 ---
-- hosts: local
+- hosts: localhost
+  vars:
+    ansible_connection: local
   pre_tasks:
    - name: Update system
      command: dnf update
