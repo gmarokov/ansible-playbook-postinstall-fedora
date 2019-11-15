@@ -4,4 +4,11 @@
     ansible_connection: local
   pre_tasks:
    - name: Update system
-     command: dnf update
+     dnf: 
+      name: "*"
+      state: latest
+  tasks:
+   - include: tasks/packages.yml
+  post_tasks:
+   - name: Reboot
+     reboot: 
