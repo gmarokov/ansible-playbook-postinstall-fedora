@@ -1,7 +1,6 @@
-Ansible playbook: Post Fedora workstation installation 
+WIP: Ansible playbook: Post Fedora workstation installation 
 =========
 [![Build Status](https://travis-ci.org/gmarokov/ansible-playbook-postinstall-fedora.svg?branch=master)](https://travis-ci.org/gmarokov/ansible-playbook-postinstall-fedora)
-
 Post Fedora installation Ansible script for provisioning dev machine.
 
 ## Installation
