@@ -1,7 +1,8 @@
 ---
 - hosts: localhost
-  vars:
-    ansible_connection: local
+  connection: local
+  become: yes
+  become_user: root
   pre_tasks:
    - name: Update system
      dnf: 
@@ -12,3 +13,4 @@
   post_tasks:
    - name: Reboot
      reboot: 
+     
