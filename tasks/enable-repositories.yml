@@ -1,0 +1,9 @@
+---
+- name: Enable RPM Fusion repositories
+  dnf:
+   name: "{{ item }}"
+   state: present
+  when: ansible_distribution == 'Fedora'
+  loop:
+   - 'http://mirror.host.ag/rpmfusion/free/fedora/rpmfusion-free-release-{{ansible_distribution_major_version}}.noarch.rpm'
+   - 'http://mirror.host.ag/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-{{ansible_distribution_major_version}}.noarch.rpm'

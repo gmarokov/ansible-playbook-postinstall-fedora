@@ -1,16 +1,11 @@
 ---
 - hosts: localhost
   connection: local
-  become: yes
-  become_user: root
+  # become: yes
+  # become_method: sudo
   pre_tasks:
-   - name: Update system
-     dnf: 
-      name: "*"
-      state: latest
+   - include: tasks/enable-repositories.yml
   tasks:
+   - include: tasks/update.yml
    - include: tasks/packages.yml
-  post_tasks:
-   - name: Reboot
-     reboot: 
      

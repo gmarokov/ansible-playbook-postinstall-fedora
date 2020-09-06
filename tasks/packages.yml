@@ -5,3 +5,36 @@
     state: present
   loop:
   - 'git'
+  - 'chromium'
+  - 'gnome-tweaks'
+  - 'gnome-shell-extension-openweather'
+  - 'gpaste' 
+  - 'gpaste-ui' 
+  - 'gnome-shell-extension-gpaste'
+  - 'gnome-shell-extension-topicons-plus.noarch'
+  - 'snapd'
+  - 'vlc'
+  - 'megasync'
+
+- name: Create a symlink for snapd
+  file:
+    src: "/var/lib/snapd/snap"
+    dest: "/snap"
+    state: link
+  
+- name: Install Snap packages
+  snap:
+    name:
+      - postman
+      - dbeaver-ce
+ 
+- name: Install Snap packages with --classic flag
+  snap:
+    classic: yes
+    name:
+      - node
+      - code
+      - spotify
+      - docker
+      - dotnet-sdk
+        
