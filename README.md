@@ -38,20 +38,13 @@ EOT
 - Snap
 - VLC
 - Mega sync
+
+#### Install snap packages
 - Postman
 - Dbeaver
 - Node.js latest
 - Docker
-- Dotnet SDK
+- Dotnet SDK latest
 - Visual Studio Code
-
-
-#### Install snap packages
-- Visual Studio Code
-- Postman
-- .NET Core SDK 2.1
-- Node.js 12
-- Docker
-- Firefox
 - Spotify
 
