@@ -7,8 +7,7 @@ Post Fedora installation Ansible script for provisioning dev machine.
 ## Installation
 1. Install Ansible:
 `sudo dnf install ansible`
-
-2. Add entry localhost to your ansible hosts:
+2. Add entry for localhost to your Ansible hosts file:
 ```
 cat <<EOT >> /etc/ansible/hosts
 [localhost] 
