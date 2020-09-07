@@ -38,7 +38,7 @@ EOT
 - VLC
 - Mega sync
 
-#### Install snap packages
+#### Install Snap packages
 - Postman
 - Dbeaver
 - Node.js latest
