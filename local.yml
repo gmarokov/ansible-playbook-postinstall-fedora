@@ -1,8 +1,6 @@
 ---
 - hosts: localhost
   connection: local
-  # become: yes
-  # become_method: sudo
   pre_tasks:
    - include: tasks/enable-repositories.yml
   tasks:
